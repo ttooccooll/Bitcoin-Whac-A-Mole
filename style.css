@@ -1,0 +1,154 @@
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: grey;
+}
+
+h1 {
+  text-align: center;
+}
+
+.score {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.hash {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-left: 50px;
+}
+
+.year {
+  font-size: 2rem;
+}
+
+button.start {
+  width: 4rem;
+  height: 2rem;
+  margin-left: 50px;
+  font-weight: bold;
+  background-color: darkgrey;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .6;
+  font-size: 1rem;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+.allmole {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.country {
+  border: 1px solid grey;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #111111;
+  height: 15vh;
+  width: calc(25% - 1vh);
+  margin-bottom: 1vh;
+  background-position: center;
+  border-radius: 80px;
+}
+
+.country:hover {
+  cursor: crosshair
+}
+
+.country1 {
+  background-image: url(canada.png);
+}
+
+.country2 {
+  background-image: url(southafrica.png);
+}
+
+.country3 {
+  background-image: url(it.png);
+}
+
+.country4 {
+  background-image: url(tr.png);
+}
+
+.country5 {
+  background-image: url(ru.png);
+}
+
+.country6 {
+  background-image: url(cy.png);
+}
+
+.country7 {
+  background-image: url(gb.png);
+}
+
+.country8 {
+  background-image: url(ng.png);
+}
+
+.country9 {
+  background-image: url(us.png);
+}
+
+.country10 {
+  background-image: url(ve.png);
+}
+
+.country11 {
+  background-image: url(de.png);
+}
+
+.country12 {
+  background-image: url(in.png);
+}
+
+.country13 {
+  background-image: url(fr.png);
+}
+
+.country14 {
+  background-image: url(china.png);
+}
+
+.country15 {
+  background-image: url(id.png);
+}
+
+.country16 {
+  background-image: url(eg.png);
+}
+
+.up {
+  height: 150px;
+  width: 100%;
+  background-image: url(mole.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.smashed {
+  height: 150px;
+  background-image: url(sandwich.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
