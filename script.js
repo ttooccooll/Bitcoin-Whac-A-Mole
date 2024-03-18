@@ -61,7 +61,6 @@ function startGame() {
             pop();
         } else {
             endGame();
-            started = false;
             return;
         }
     }
