@@ -59,10 +59,6 @@ function startGame() {
         const unsmashedMoles = document.querySelectorAll('.mole:not(.smashed)');
         if (smashedMoles.length < 16) {
             pop();
-        } else {
-            alert("You have squashed the Bitcoin network. Welcome to dystopia!");
-            started = false;
-            return;
         }
     }
 }
@@ -94,6 +90,8 @@ function unsmashMoles() {
     smashedMoles.forEach(mole => {
         if (hash >= mole.smashedHash + 500) {
             mole.classList.remove('smashed');
+            score--;
+            scoreBoard.textContent = "Banned in " + score + " countries!";
         }
     });
 }
