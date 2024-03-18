@@ -187,3 +187,9 @@ button:active {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .allmole {
+    width: 95%;
+  }
+}
