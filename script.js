@@ -59,6 +59,10 @@ function startGame() {
         const unsmashedMoles = document.querySelectorAll('.mole:not(.smashed)');
         if (smashedMoles.length < 16) {
             pop();
+        } else {
+            endGame();
+            started = false;
+            return;
         }
     }
 }
@@ -125,6 +129,7 @@ function increaseHashRate() {
 
     setTimeout(() => {
         clearInterval(hashInterval);
+        endGame();
     }, 30000);
 }
 
@@ -138,3 +143,41 @@ function increaseYearRate() {
         clearInterval(yearInterval);
     }, 30000);
 }
+
+function endGame() {
+    clearInterval(hashInterval);
+    clearInterval(yearInterval);
+    displayEndGameModal();
+}
+
+function displayEndGameModal() {
+    const endGameModal = document.getElementById('endGameModal');
+    const finalScoreSpan = document.getElementById('finalScore');
+    const finalHashRateSpan = document.getElementById('finalHashRate');
+    const finalYearSpan = document.getElementById('finalYear');
+    const endTextSpan = document.getElementById('endText')
+  
+    finalScoreSpan.textContent = score;
+    finalHashRateSpan.textContent = Math.floor(hash);
+    finalYearSpan.textContent = year;
+
+    if (score === 16) {
+        endTextSpan.textContent = "You have squashed the Bitcoin network and ushered in a dystopian nightmare.";
+    } else {
+        endTextSpan.textContent = "The hash rate just got away from you and you have inadvertently ushered in hyperbitcoinization.";
+    }
+  
+    endGameModal.style.display = 'block';
+  
+    const closeBtn = document.querySelector('.close');
+    window.onclick = function(event) {
+      if (event.target == endGameModal || event.target == closeBtn) {
+        endGameModal.style.display = 'none';
+      }
+    };
+  }
+
+  function endGame() {
+    displayEndGameModal();
+  }
+  
