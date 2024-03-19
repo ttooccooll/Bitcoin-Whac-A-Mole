@@ -163,7 +163,7 @@ function displayEndGameModal() {
     if (score === 16) {
         endTextSpan.textContent = "You have squashed the Bitcoin network and ushered in a dystopian nightmare.";
     } else {
-        endTextSpan.textContent = "The hash rate just got away from you and you have inadvertently ushered in hyperbitcoinization.";
+        endTextSpan.textContent = "The hash rate just got away from you and now you have inadvertently ushered in hyperbitcoinization. The few remaining bans are lifted.";
     }
   
     endGameModal.style.display = 'block';

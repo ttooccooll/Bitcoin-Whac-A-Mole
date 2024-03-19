@@ -166,12 +166,26 @@ button:active {
 }
 
 .modal-content {
-  background-color: black;
+  background-image: url('bitcoin-drinking-milk.gif');
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
+  color: #aaa;
+  text-shadow: 1px 1px 3px black;
+}
+
+.modal-content h2 {
+  font-size: 4rem;
+}
+
+.modal-content p {
+  font-size: 3rem;
 }
 
 .close {
