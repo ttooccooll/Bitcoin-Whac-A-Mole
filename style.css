@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'MyFontc';
+  src: url('alarm clock.ttf') format('truetype');
+}
+
 body {
   text-align: center;
   margin: 0px;
@@ -13,16 +18,28 @@ h1 {
 .score {
   font-size: 2rem;
   margin-right: 1rem;
+  font-family: 'MyFontc';
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
 }
 
 .hash {
   font-size: 2rem;
   margin-right: 1rem;
   margin-left: 50px;
+  font-family: 'MyFontc';
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
 }
 
 .year {
   font-size: 2rem;
+  font-family: 'MyFontc';
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
 }
 
 button.start {
