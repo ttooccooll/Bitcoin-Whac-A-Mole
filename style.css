@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'MyFontc';
+  src: url('alarm clock.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'whac';
+  src: url('HelloWhackAMole.ttf') format('truetype');
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: darkorange;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'whac';
+  color: blue;
+  text-shadow: black 1px 1px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 
+    5px 5px 15px black,
+    -5px -5px 15px black,
+    -5px 5px 15px black,
+    5px -5px 15px black;
+  background: black;
+  border: 10px solid transparent;
+  border-width: 10px 0;
+  background-image:
+      linear-gradient(yellow, yellow),
+      linear-gradient(to bottom right, transparent 50.5%, yellow 50.5%),
+      linear-gradient(to bottom left, transparent 50.5%, yellow 50.5%),
+      linear-gradient(to top right, transparent 50.5%, yellow 50.5%),
+      linear-gradient(to top left, transparent 50.5%, yellow 50.5%);
+  background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+  background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-clip: padding-box, border-box, border-box, border-box, border-box;
+  background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 25%;
+  width: 50%;
+  font-family: 'whac';
+  color: red;
+}
+
+.stat {
+  font-size: 2em;
+  margin-bottom: .5rem;
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  text-shadow: black 1px 1px 0;
+  box-shadow: 
+  5px 5px 15px black,
+  -5px -5px 15px black,
+  -5px 5px 15px black,
+  5px -5px 15px black;
+  background: black;
+  border: 10px solid transparent;
+  border-width: 10px 0;
+  background-image:
+      linear-gradient(green, green),
+      linear-gradient(to bottom right, transparent 50.5%, green 50.5%),
+      linear-gradient(to bottom left, transparent 50.5%, green 50.5%),
+      linear-gradient(to top right, transparent 50.5%, green 50.5%),
+      linear-gradient(to top left, transparent 50.5%, green 50.5%);
+  background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+  background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-clip: padding-box, border-box, border-box, border-box, border-box;
+  background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+
+.statz {
+  font-size: .5em;
+  margin-bottom: .5rem;
+  color: darkgrey
+}
+
+.score {
+  font-size: 2rem;
+  font-family: 'MyFontc';
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
+  background: black;
+  width: 4rem;
+  border-left: .4rem solid black;
+  border-right: .4rem solid black;
+  border-top: .2rem solid black;
+  display: inline-block;
+  text-align: right;
+}
+
+.hash {
+  font-size: 2rem;
+  font-family: 'MyFontc';
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
+  background: black;
+  width: 15rem;
+  border-left: .4rem solid black;
+  border-right: .4rem solid black;
+  border-top: .2rem solid black;
+  display: inline-block;
+  text-align: right;
+}
+
+.year {
+  font-size: 2rem;
+  font-family: 'MyFontc';
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
+  background: black;
+  width: 4rem;
+  border-left: .4rem solid black;
+  border-right: .8rem solid black;
+  border-top: .2rem solid black;
+  display: inline-block;
+  text-align: right;
+}
+
+button.start {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 500px;
+  box-shadow: inset 1px 1px 5px darkgrey;
+  margin-left: 40%;
+  box-shadow: 
+  5px 5px 15px black,
+  -5px -5px 15px black,
+  -5px 5px 15px black,
+  5px -5px 15px black;
+}
+
+button:hover {
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: inset 0 12px 16px 0 rgba(0,0,0,0.24), inset 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+.allmole {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.country {
+  border: 3px double grey;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #111111;
+  height: 15vh;
+  width: calc(25% - 1vh);
+  margin-bottom: 1vh;
+  background-position: center;
+  border-radius: 80px;
+  box-shadow: 
+  5px 5px 15px black,
+  -5px -5px 15px black,
+  -5px 5px 15px black,
+  5px -5px 15px black;
+}
+
+.country:hover {
+  cursor: crosshair
+}
+
+.country1 {
+  background-image: url(canada.png);
+}
+
+.country2 {
+  background-image: url(eg.png);
+}
+
+.country3 {
+  background-image: url(it.png);
+}
+
+.country4 {
+  background-image: url(tr.png);
+}
+
+.country5 {
+  background-image: url(ru.png);
+}
+
+.country6 {
+  background-image: url(cy.png);
+}
+
+.country7 {
+  background-image: url(gb.png);
+}
+
+.country8 {
+  background-image: url(ng.png);
+}
+
+.country9 {
+  background-image: url(us.png);
+}
+
+.country10 {
+  background-image: url(ve.png);
+}
+
+.country11 {
+  background-image: url(id.png);
+}
+
+.country12 {
+  background-image: url(in.png);
+}
+
+.country13 {
+  background-image: url(fr.png);
+}
+
+.country14 {
+  background-image: url(china.png);
+}
+
+.country15 {
+  background-image: url(de.png);
+}
+
+.country16 {
+  background-image: url(southafrica.png);
+}
+
+.up {
+  height: 150px;
+  width: 100%;
+  background-image: url(mole.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.smashed {
+  height: 150px;
+  background-image: url(sandwich.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  background-image: url('bitcoin-drinking-milk.gif');
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  color: #aaa;
+  text-shadow: 
+  5px 5px 15px black,
+  -5px -5px 15px black,
+  -5px 5px 15px black,
+  5px -5px 15px black;
+}
+
+.modal-content h2 {
+  font-size: 4rem;
+}
+
+.modal-content p {
+  font-size: 3rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .allmole {
+    width: 95%;
+  }
+}
