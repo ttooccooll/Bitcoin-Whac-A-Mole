@@ -145,6 +145,7 @@ h1 {
 }
 
 button.start {
+  text-shadow: darkgrey 1px 1px 0;
   margin-left: 1rem;
   width: 4rem;
   height: 4rem;
@@ -175,6 +176,7 @@ button:active {
 }
 
 button.help {
+  text-shadow: darkgrey 1px 1px 0;
   width: 4rem;
   height: 4rem;
   font-size: 1rem;
@@ -212,7 +214,7 @@ button:active {
 }
 
 .country {
-  border: 3px double grey;
+  border: 3px ridge grey;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #111111;
@@ -222,10 +224,10 @@ button:active {
   background-position: center;
   border-radius: 80rem;
   box-shadow:
-  .3rem .3rem .3rem black,
-  -.3rem -.3rem .3rem black,
-  -.3rem .3rem .3rem black,
-  .3rem -.3rem .3rem black;
+  .3rem .3rem .5rem black,
+  -.3rem -.3rem .5rem black,
+  -.3rem .3rem .5rem black,
+  .3rem -.3rem .5rem black;
 }
 
 .country:hover {
@@ -328,15 +330,17 @@ button:active {
 }
 
 .modal-content {
-  background-color: purple;
+  background: url('https://image.nostr.build/nostr.build_90dd9ee1e3c49caf1b21b4153871b8b12a8680ebb5792d5d7410bfb44059b2c8.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: purple;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-  color: #aaa;
+  color: white;
   text-shadow: 
   1rem .3rem 1rem black,
   -1rem -.3rem 1rem black,
@@ -366,8 +370,15 @@ button:active {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .allmole {
     width: 95%;
+  }
+  .stats {
+    margin-left: 2.5%;
+    width: 95%;
+  }
+  .modal-content p {
+    font-size: 30px;
   }
 }
