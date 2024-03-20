@@ -19,20 +19,20 @@ h1 {
   text-align: center;
   font-family: 'whac';
   color: blue;
-  text-shadow: black 1px 1px 0;
+  text-shadow: black 1px 2px 0;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 
-    5px 5px 15px black,
-    -5px -5px 15px black,
-    -5px 5px 15px black,
-    5px -5px 15px black;
+    2rem 1rem 2rem black,
+    -2rem -1rem 2rem black,
+    -2rem 1rem 2rem black,
+    2rem -1rem 2rem black;
   background: black;
-  border: 10px solid transparent;
-  border-width: 10px 0;
+  border: 1rem solid transparent;
+  border-width: 1rem 0;
   background-image:
       linear-gradient(yellow, yellow),
       linear-gradient(to bottom right, transparent 50.5%, yellow 50.5%),
@@ -40,8 +40,8 @@ h1 {
       linear-gradient(to top right, transparent 50.5%, yellow 50.5%),
       linear-gradient(to top left, transparent 50.5%, yellow 50.5%);
   background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
-  background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
-  background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-position: 0 0, 1.5rem 0, 1.5rem 0, 1.5rem 100%, 1.5rem 100%;
+  background-size: auto auto, 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
   background-clip: padding-box, border-box, border-box, border-box, border-box;
   background-origin: padding-box, border-box, border-box, border-box, border-box;
 }
@@ -63,15 +63,15 @@ h1 {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: .5rem;
-  text-shadow: black 1px 1px 0;
+  text-shadow: black 1px 2px 0;
   box-shadow: 
-  5px 5px 15px black,
-  -5px -5px 15px black,
-  -5px 5px 15px black,
-  5px -5px 15px black;
+    1rem .3rem 1rem black,
+    -1rem -.3rem 1rem black,
+    -1rem .3rem 1rem black,
+    1rem -.3rem 1rem black;
   background: black;
-  border: 10px solid transparent;
-  border-width: 10px 0;
+  border: 1rem solid transparent;
+  border-width: 1rem 0;
   background-image:
       linear-gradient(green, green),
       linear-gradient(to bottom right, transparent 50.5%, green 50.5%),
@@ -79,8 +79,8 @@ h1 {
       linear-gradient(to top right, transparent 50.5%, green 50.5%),
       linear-gradient(to top left, transparent 50.5%, green 50.5%);
   background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
-  background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
-  background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-position: 0 0, 1rem 0, 1rem 0, 1rem 100%, 1rem 100%;
+  background-size: auto auto, 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
   background-clip: padding-box, border-box, border-box, border-box, border-box;
   background-origin: padding-box, border-box, border-box, border-box, border-box;
 }
@@ -180,12 +180,12 @@ button:active {
   width: calc(25% - 1vh);
   margin-bottom: 1vh;
   background-position: center;
-  border-radius: 80px;
-  box-shadow: 
-  5px 5px 15px black,
-  -5px -5px 15px black,
-  -5px 5px 15px black,
-  5px -5px 15px black;
+  border-radius: 80rem;
+  box-shadow:
+  .3rem .3rem .3rem black,
+  -.3rem -.3rem .3rem black,
+  -.3rem .3rem .3rem black,
+  .3rem -.3rem .3rem black;
 }
 
 .country:hover {
