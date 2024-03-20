@@ -182,3 +182,20 @@ function displayEndGameModal() {
     displayEndGameModal();
   }
   
+  function rulesModal() {
+    const rulesModal = document.getElementById('rulesModal');
+    const closeBtn = rulesModal.querySelector('.close');
+
+    rulesModal.style.display = 'block';
+
+    closeBtn.addEventListener('click', function() {
+        rulesModal.style.display = 'none';
+    });
+
+    window.onclick = function(event) {
+        if (event.target == rulesModal) {
+            rulesModal.style.display = 'none';
+        }
+    };
+  }
+

@@ -72,13 +72,23 @@
                 <div class="mole"></div>
             </div>
         </div>
-        <button class="start" onclick="startGame()">Start</button>
+        <div class="buttons">
+            <button class="help" onclick="rulesModal()">Help</button>
+            <button class="start" onclick="startGame()">Start</button>
+        </div>
         <div id="endGameModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Game Over</h2>
               <p>Ending Hash Rate: <span id="finalHashRate"></span> EH/s</p>
               <p>It is the year <span id="finalYear"></span>.&nbsp;Bitcoin is banned in <span id="finalScore"></span> countries.&nbsp;<span id="endText"></span></p>
+            </div>
+          </div>
+          <div id="rulesModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>RULES</h2>
+              <p>You are an unelected, unaccountable, multinational organization that intends to ban Bitcoin world-wide. Whac it when you see it gain prominence in an country but BEWARE! When you miss, the hash rate rises faster than normal and when the hash rate is 500 EH/s more than the time of a countries ban, the ban is lifted. This can get out of hand quite quickly! Good luck!</p>
             </div>
           </div>
         <script src="script.js"></script>
