@@ -46,7 +46,7 @@ function startGame() {
         baseMissRate = 1; 
         year = 2008;    
         started = true;
-        scoreBoard.textContent = "Banned in "+ 0 + " countries!";
+        scoreBoard.textContent = 0;
         timeUp = false;
         increaseHashRate();
         increaseYearRate();
@@ -72,13 +72,13 @@ function hit(e) {
     if (!mole.classList.contains('smashed')) {
         mole.classList.remove('up');
         mole.classList.add('smashed');
-        scoreBoard.textContent = "Banned in " + score + " countries!";
+        scoreBoard.textContent = score;
         const smashSound = new Audio('smash.mp3');
         smashSound.play();
         mole.smashedHash = hash;
         if (hash >= 1) {
             hash -= 1;
-            hashBoard.textContent = "Hash rate: " + Math.floor(hash) + " EH/s";
+            hashBoard.textContent =  Math.floor(hash) + " EH's";
             mole.smashedHash = hash;
         } else {
             hash = 0;
@@ -94,7 +94,7 @@ function unsmashMoles() {
         if (hash >= mole.smashedHash + 500) {
             mole.classList.remove('smashed');
             score--;
-            scoreBoard.textContent = "Banned in " + score + " countries!";
+            scoreBoard.textContent = score ;
         }
     });
 }
@@ -109,7 +109,7 @@ const incrementFactor = Math.log(4);
 function miss(e) {
     if (!e.target.classList.contains('mole')) {
         hash += baseMissRate;
-        hashBoard.textContent = "Hash rate: " + Math.floor(hash) + " EH/s";
+        hashBoard.textContent = Math.floor(hash) + " EH/s";
         baseMissRate *= incrementFactor;
     }
 }
@@ -122,7 +122,7 @@ function increaseHashRate() {
 
     hashInterval = setInterval(() => {
         hash += baseHashRate;
-        hashBoard.textContent = "Hash rate: " + Math.floor(hash) + " EH/s";
+        hashBoard.textContent = Math.floor(hash)+" EH/s";
         baseHashRate *= incrementFactor;
     }, 1000);
 
@@ -135,7 +135,7 @@ function increaseHashRate() {
 function increaseYearRate() {
     yearInterval = setInterval(() => {
         year++;
-        yearBoard.textContent = "Date: " + year;
+        yearBoard.textContent = year;
     }, 1000);
 
     setTimeout(() => {

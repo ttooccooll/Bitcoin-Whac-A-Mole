@@ -8,9 +8,20 @@
     </head>
     <body>
         <h1>Bitcoin-Whac-A-Mole</h1>
-        <span class="score">Banned in 0 countries!</span>
-        <span class="hash">Hash rate: 0 EH/s</span>
-        <button class="start" onclick="startGame()">Start</button>
+        <div class="stats">
+            <div class="stat"> Bans
+                <br>
+                <span class="score">0</span>
+            </div>
+            <div class="stat"> Hash Rate
+                <br>
+                <span class="hash">0 EH/s</span>
+            </div>
+            <div class="stat"> Year
+                <br>
+                <span class="year">2008</span>
+            </div>
+        </div>
         <div class="allmole">
             <div class="country country1" id="country1">
                 <div class="mole"></div>
@@ -61,7 +72,7 @@
                 <div class="mole"></div>
             </div>
         </div>
-        <span class="year">Date: 2008</span>
+        <button class="start" onclick="startGame()">Start</button>
         <div id="endGameModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
