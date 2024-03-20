@@ -257,7 +257,7 @@ button:active {
 }
 
 .up {
-  height: 150px;
+  height: 15vh;
   width: 100%;
   background-image: url(mole.png);
   background-size: 75%;
@@ -267,7 +267,7 @@ button:active {
 }
 
 .smashed {
-  height: 150px;
+  height: 15vh;
   background-image: url(sandwich.png);
   background-size: 75%;
   background-repeat: no-repeat;
