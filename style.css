@@ -288,9 +288,7 @@ button:active {
 }
 
 .modal-content {
-  background-image: url('bitcoin-drinking-milk.gif');
-  background-size: cover;
-  background-color: transparent;
+  background-color: purple;
   background-repeat: no-repeat;
   background-position: center;
   margin: 5% auto;
@@ -300,10 +298,10 @@ button:active {
   height: 80%;
   color: #aaa;
   text-shadow: 
-  5px 5px 15px black,
-  -5px -5px 15px black,
-  -5px 5px 15px black,
-  5px -5px 15px black;
+  1rem .3rem 1rem black,
+  -1rem -.3rem 1rem black,
+  -1rem .3rem 1rem black,
+  1rem -.3rem 1rem black;
 }
 
 .modal-content h2 {
