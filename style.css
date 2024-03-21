@@ -308,7 +308,7 @@ button:active {
   background-position-x: center;
   background-position-y: center;
   overflow: hidden;
-  animation: rise 1.1s ease-out;
+  animation: rise .93s ease-out;
 }
 
 @keyframes rise {
@@ -349,7 +349,7 @@ button:active {
 
 .modal-content {
   background: url('https://image.nostr.build/nostr.build_90dd9ee1e3c49caf1b21b4153871b8b12a8680ebb5792d5d7410bfb44059b2c8.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: purple;

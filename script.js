@@ -23,7 +23,7 @@ function randomMole() {
 let molesUp = 0;
 
 function pop() {
-    const time = 1000;
+    const time = 920;
     if (molesUp < 2) {
         let mole = randomMole();
         while (mole.classList.contains('smashed')) {
