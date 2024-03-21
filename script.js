@@ -20,7 +20,7 @@ function randomMole() {
 }
 
 function pop() {
-    const time = popTime(500, 1000);
+    const time = 1000;
     let mole = randomMole();
     while (mole.classList.contains('smashed')) {
         mole = randomMole();
@@ -28,8 +28,6 @@ function pop() {
     mole.classList.add('up');
     setTimeout(() => {
         mole.classList.remove('up');
-        const smashSound = new Audio('Leap.mp3');
-        smashSound.play();
         if (!timeUp) {
             pop();
         } else {
