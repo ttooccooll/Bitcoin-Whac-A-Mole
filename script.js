@@ -9,6 +9,7 @@ let year = 2008;
 let started = false;
 let hashInterval;
 let yearInterval;
+let unsmashedMoles;
 
 function popTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -19,22 +20,28 @@ function randomMole() {
     return moles[index];
 }
 
+let molesUp = 0;
+
 function pop() {
     const time = 1000;
-    let mole = randomMole();
-    while (mole.classList.contains('smashed')) {
-        mole = randomMole();
-    }
-    mole.classList.add('up');
-    setTimeout(() => {
-        mole.classList.remove('up');
-        if (!timeUp) {
-            pop();
-        } else {
-            started = false;
+    if (molesUp < 2) {
+        let mole = randomMole();
+        while (mole.classList.contains('smashed')) {
+            mole = randomMole();
         }
-        unsmashMoles();
-    }, time);
+        mole.classList.add('up');
+        molesUp++;
+        setTimeout(() => {
+            mole.classList.remove('up');
+            molesUp--;
+            if (!timeUp) {
+                pop();
+            } else {
+                started = false;
+            }
+            unsmashMoles();
+        }, time);
+    }
 }
 
 
@@ -48,6 +55,8 @@ function startGame() {
         started = true;
         scoreBoard.textContent = 0;
         timeUp = false;
+        const smashSound = new Audio('smash.mp3');
+        smashSound.play();
         increaseHashRate();
         increaseYearRate();
         const smashedMoles = document.querySelectorAll('.smashed');
@@ -55,16 +64,18 @@ function startGame() {
             mole.classList.remove('smashed');
         });
         setTimeout(() => timeUp = true, 30000);
+
+        unsmashedMoles = document.querySelectorAll('.mole:not(.smashed)');
         
-        const unsmashedMoles = document.querySelectorAll('.mole:not(.smashed)');
-        if (smashedMoles.length < 16) {
+        if (unsmashedMoles.length > 0) {
             pop();
         } else {
             endGame();
-            return;
+            displayEndGameModal();
         }
     }
 }
+
 
 function hit(e) {
     score++;
@@ -85,6 +96,13 @@ function hit(e) {
             hashBoard.textContent = "Hash rate: 0 EH/s";
         }
         unsmashMoles();
+        unsmashedMoles = document.querySelectorAll('.mole:not(.smashed)'); // Update unsmashed moles
+        if (unsmashedMoles.length > 0) {
+            pop();
+        } else {
+            endGame();
+            displayEndGameModal();
+        }
     }
 }
 
@@ -161,7 +179,7 @@ function displayEndGameModal() {
     finalYearSpan.textContent = year;
 
     if (score === 16) {
-        endTextSpan.textContent = "You have squashed the Bitcoin network and ushered in a dystopian nightmare.";
+        endTextSpan.textContent = "You have squashed the Bitcoin network and ushered in a dystopian nightmare. Congratulations?";
     } else {
         endTextSpan.textContent = "The hash rate just got away from you and now you have inadvertently ushered in hyperbitcoinization. The few remaining bans are lifted.";
     }
@@ -185,6 +203,9 @@ function displayEndGameModal() {
     const closeBtn = rulesModal.querySelector('.close');
 
     rulesModal.style.display = 'block';
+
+    const smashSound = new Audio('smash.mp3');
+    smashSound.play();
 
     closeBtn.addEventListener('click', function() {
         rulesModal.style.display = 'none';
