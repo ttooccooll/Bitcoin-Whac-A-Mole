@@ -500,19 +500,16 @@ button.help:active {
 
 @media screen and (max-width: 800px) {
   .allmole {
-    width: 95%;
-    height: auto;
+    width: 100%;
   }
   .stats {
-    width: auto;
-    overflow-x: auto;
-    white-space: nowrap; 
+    margin-left: 2.5%;
+    width: 100%;
   }
   .modal-content p {
-    font-size: 20px;
+    font-size: 15px;
   }
   .country {
     width: calc(25% - 1vh);
-    height: auto;
   }
 }
