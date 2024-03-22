@@ -109,7 +109,7 @@ function hit(e) {
 function unsmashMoles() {
     const smashedMoles = document.querySelectorAll('.smashed');
     smashedMoles.forEach(mole => {
-        if (hash >= mole.smashedHash + 500) {
+        if (hash >= mole.smashedHash + 300) {
             mole.classList.remove('smashed');
             score--;
             scoreBoard.textContent = score ;
@@ -117,7 +117,7 @@ function unsmashMoles() {
     });
 }
 
-setInterval(unsmashMoles, 500);
+setInterval(unsmashMoles, 300);
 
 moles.forEach(mole => mole.addEventListener('click', hit));
 
