@@ -498,7 +498,7 @@ button.help:active {
   cursor: pointer;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) {
   body {
     width: 100%;
     overflow: auto;
@@ -510,16 +510,20 @@ button.help:active {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  h1 {
+    font-size: 18px;
+  }
   .stats {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    overflow: auto;
+    margin-left: 1%;
+    width: 98%;
+    height: auto;
+    font-size: 15px;
   }
   .modal-content p {
     font-size: 15px;
   }
   .country {
     width: calc(25% - 1vh);
+    height: auto;
   }
 }
