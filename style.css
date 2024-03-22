@@ -499,12 +499,16 @@ button.help:active {
 }
 
 @media screen and (max-width: 800px) {
-  .allmole {
+  body {
     width: 100%;
+    overflow: auto;
+  }
+  .allmole {
+    width: 98%;
   }
   .stats {
-    margin-left: 2.5%;
-    width: 100%;
+    margin-left: 1%;
+    width: 98%;
   }
   .modal-content p {
     font-size: 15px;
