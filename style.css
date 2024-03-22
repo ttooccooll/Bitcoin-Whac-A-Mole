@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'MyFontc';
-  src: url('alarm clock.ttf') format('truetype');
+  font-family: "MyFontc";
+  src: url("alarm clock.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'whac';
-  src: url('HelloWhackAMole.ttf') format('truetype');
+  font-family: "whac";
+  src: url("HelloWhackAMole.ttf") format("truetype");
 }
 
 body {
@@ -13,11 +13,20 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: darkorange;
+  background-image: linear-gradient(
+      90deg,
+      rgba(139, 69, 19, 0.1) 15%,
+      transparent 23%
+    ),
+    linear-gradient(-90deg, rgba(139, 69, 19, 0.1) 35%, transparent 22%),
+    linear-gradient(90deg, transparent 95%, rgba(139, 69, 19, 0.1) 65%),
+    linear-gradient(-90deg, transparent 5%, rgba(139, 69, 19, 0.1) 55%);
+  background-size: 5px 20px;
 }
 
 h1 {
   text-align: center;
-  font-family: 'whac';
+  font-family: "whac";
   color: blue;
   text-shadow: black 1px 2px 0;
   margin-left: auto;
@@ -25,22 +34,18 @@ h1 {
   width: fit-content;
   padding-left: 1rem;
   padding-right: 1rem;
-  box-shadow: 
-    2rem 1rem 2rem black,
-    -2rem -1rem 2rem black,
-    -2rem 1rem 2rem black,
-    2rem -1rem 2rem black;
+  box-shadow: 2rem 1rem 2rem black, -2rem -1rem 2rem black,
+    -2rem 1rem 2rem black, 2rem -1rem 2rem black;
   background: black;
-  border: .5rem solid transparent;
-  border-width: .5rem 0;
-  background-image:
-      linear-gradient(yellow, yellow),
-      linear-gradient(to bottom right, transparent 50.5%, yellow 50.5%),
-      linear-gradient(to bottom left, transparent 50.5%, yellow 50.5%),
-      linear-gradient(to top right, transparent 50.5%, yellow 50.5%),
-      linear-gradient(to top left, transparent 50.5%, yellow 50.5%);
+  border: 0.5rem solid transparent;
+  border-width: 0.5rem 0;
+  background-image: linear-gradient(gold, yellow),
+    linear-gradient(to bottom right, transparent 50.5%, gold 50.5%),
+    linear-gradient(to bottom left, transparent 50.5%, gold 50.5%),
+    linear-gradient(to top right, transparent 50.5%, yellow 50.5%),
+    linear-gradient(to top left, transparent 50.5%, yellow 50.5%);
   background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
-  background-position: 0 0, .5rem 0, .5rem 0, .5rem 100%, .5rem 100%;
+  background-position: 0 0, 0.5rem 0, 0.5rem 0, 0.5rem 100%, 0.5rem 100%;
   background-size: auto auto, 1rem 1rem, 1rem 1rem, 1rem 1rem, 1rem 1rem;
   background-clip: padding-box, border-box, border-box, border-box, border-box;
   background-origin: padding-box, border-box, border-box, border-box, border-box;
@@ -52,86 +57,85 @@ h1 {
   justify-content: space-evenly;
   margin-left: 25%;
   width: 50%;
-  font-family: 'whac';
+  font-family: "whac";
   color: red;
 }
 
 .stat {
   font-size: 2em;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   width: fit-content;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   text-shadow: black 1px 2px 0;
-  box-shadow: 
-    1rem .3rem 1rem black,
-    -1rem -.3rem 1rem black,
-    -1rem .3rem 1rem black,
-    1rem -.3rem 1rem black;
+  box-shadow: 1rem 0.3rem 1rem black, -1rem -0.3rem 1rem black,
+    -1rem 0.3rem 1rem black, 1rem -0.3rem 1rem black;
   background: black;
-  border: .5rem solid transparent;
-  border-width: .5rem 0;
-  background-image:
-      linear-gradient(green, green),
-      linear-gradient(to bottom right, transparent 50.5%, green 50.5%),
-      linear-gradient(to bottom left, transparent 50.5%, green 50.5%),
-      linear-gradient(to top right, transparent 50.5%, green 50.5%),
-      linear-gradient(to top left, transparent 50.5%, green 50.5%);
+  border: 0.5rem solid transparent;
+  border-width: 0.5rem 0;
+  background-image: linear-gradient(forestgreen, lawngreen),
+    linear-gradient(to bottom right, transparent 50.5%, forestgreen 50.5%),
+    linear-gradient(to bottom left, transparent 50.5%, forestgreen 50.5%),
+    linear-gradient(to top right, transparent 50.5%, lawngreen 50.5%),
+    linear-gradient(to top left, transparent 50.5%, lawngreen 50.5%);
   background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
-  background-position: 0 0, .5rem 0, .5rem 0, .5rem 100%, .5rem 100%;
+  background-position: 0 0, 0.5rem 0, 0.5rem 0, 0.5rem 100%, 0.5rem 100%;
   background-size: auto auto, 1rem 1rem, 1rem 1rem, 1rem 1rem, 1rem 1rem;
   background-clip: padding-box, border-box, border-box, border-box, border-box;
   background-origin: padding-box, border-box, border-box, border-box, border-box;
 }
 
 .statz {
-  font-size: .5em;
-  margin-bottom: .5rem;
-  color: darkgrey
+  font-size: 0.5em;
+  margin-bottom: 0.5rem;
+  color: darkgrey;
 }
 
 .score {
   font-size: 2rem;
-  font-family: 'MyFontc';
+  font-family: "MyFontc";
   font-weight: lighter;
   color: rgb(255, 0, 0);
-  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a,
+    0 0 22px #e40808;
   background: black;
   width: 2.5rem;
-  border-left: .4rem solid black;
-  border-right: .4rem solid black;
-  border-top: .2rem solid black;
+  border-left: 0.4rem solid black;
+  border-right: 0.4rem solid black;
+  border-top: 0.2rem solid black;
   display: inline-block;
   text-align: right;
 }
 
 .hash {
   font-size: 2rem;
-  font-family: 'MyFontc';
+  font-family: "MyFontc";
   font-weight: lighter;
   color: rgb(255, 0, 0);
-  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a,
+    0 0 22px #e40808;
   background: black;
   width: 15rem;
-  border-left: .4rem solid black;
-  border-right: .4rem solid black;
-  border-top: .2rem solid black;
+  border-left: 0.4rem solid black;
+  border-right: 0.4rem solid black;
+  border-top: 0.2rem solid black;
   display: inline-block;
   text-align: right;
 }
 
 .year {
   font-size: 2rem;
-  font-family: 'MyFontc';
+  font-family: "MyFontc";
   font-weight: lighter;
   color: rgb(255, 0, 0);
-  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a, 0 0 22px #e40808;
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a,
+    0 0 22px #e40808;
   background: black;
   width: 4rem;
-  border-left: .4rem solid black;
-  border-right: .8rem solid black;
-  border-top: .2rem solid black;
+  border-left: 0.4rem solid black;
+  border-right: 0.8rem solid black;
+  border-top: 0.2rem solid black;
   display: inline-block;
   text-align: right;
 }
@@ -139,70 +143,148 @@ h1 {
 .buttons {
   width: 50%;
   margin-left: 25%;
+  margin-top: 0.15rem;
   display: flex;
   flex-direction: rows;
   justify-content: flex-end;
 }
 
 button.start {
-  text-shadow: darkgrey 1px 1px 0;
+  position: relative;
+  text-shadow: darkgrey 1px 1px 1px, darkgrey -1px -1px 1px,
+    darkgrey -1px 1px 1px, darkgrey 1px -1px 1px;
   margin-left: 1rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   font-size: 1rem;
   font-weight: bold;
   background-color: red;
+  background-image: radial-gradient(
+    1.2rem 1.2rem,
+    circle contain,
+    red 0.5rem,
+    #ff8080 1rem,
+    #ff8080 1.2rem,
+    #cc0000 1.8rem
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+    rgba(255, 255, 255, 0.7) 0 0.1rem 0.1rem inset, red 0 0.3rem 0.4rem inset,
+    rgba(0, 0, 0, 0.3) 0 0.8rem 0.4rem inset,
+    rgba(255, 255, 255, 0.5) 0 -2px 3px inset, red 0 -7px 20px inset;
   border-radius: 500px;
-  box-shadow: inset 1px 1px 5px darkgrey;
-  box-shadow: 
-  5px 5px 15px black,
-  -5px -5px 15px black,
-  -5px 5px 15px black,
-  5px -5px 15px black;
+  border: red 1px solid;
+  display: block;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0.3rem;
+  background: #cc0000;
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  box-shadow: rgba(204, 0, 0, 0.8) 0 4px 5px inset,
+    rgba(255, 255, 255, 0.5) 0 12px 5px inset,
+    rgba(153, 0, 0, 0.7) 0 -12px 5px inset, rgba(0, 0, 0, 0.8) 0 4px 8px;
 }
 
 button:hover {
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: inset 0 12px 16px 0 rgba(0,0,0,0.24), inset 0 17px 50px 0 rgba(0,0,0,0.19);
+  font-size: 1.1rem;
+  background-image: radial-gradient(
+    1.2rem 1.2rem,
+    circle contain,
+    red 0.5rem,
+    #ff8080 1.1rem,
+    #ff8080 1.2rem,
+    #cc0000 1.8rem
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+    rgba(275, 255, 255, 0.7) 0 0.1rem 0.1rem inset, tomato 0 0.3rem 0.4rem inset,
+    rgba(0, 0, 0, 0.3) 0 0.8rem 0.9rem inset,
+    rgba(255, 255, 275, 0.5) 0 -2px 3px inset, red 0 -7px 20px inset;
 }
 
 button:active {
-  box-shadow: 
-    inset 5px 5px 15px black,
-    inset -5px -5px 15px black,
-    inset -5px 5px 15px black,
-    inset 5px -5px 15px black;
+  box-shadow: inset 5px 5px 15px black, inset -5px -5px 15px black,
+    inset -5px 5px 15px black, inset 5px -5px 15px black;
 }
 
 button.help {
-  text-shadow: darkgrey 1px 1px 0;
-  width: 4rem;
-  height: 4rem;
+  position: relative;
+  text-shadow: darkgrey 1px 1px 1px, darkgrey -1px -1px 1px,
+    darkgrey -1px 1px 1px, darkgrey 1px -1px 1px;
+  margin-left: 1rem;
+  width: 3.8rem;
+  height: 3.8rem;
   font-size: 1rem;
   font-weight: bold;
   background-color: blue;
+  background-image: radial-gradient(
+    1.2rem 1.2rem,
+    circle contain,
+    blue 0.5rem,
+    #ff8080 1rem,
+    #ff8080 1.2rem,
+    #cc0000 1.8rem
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+    rgba(255, 255, 255, 0.7) 0 0.1rem 0.1rem inset, blue 0 0.3rem 0.4rem inset,
+    rgba(0, 0, 0, 0.3) 0 0.8rem 0.4rem inset,
+    rgba(255, 255, 255, 0.5) 0 -2px 3px inset, blue 0 -7px 20px inset;
   border-radius: 500px;
-  box-shadow: inset 1px 1px 5px darkgrey;
-  box-shadow: 
-  5px 5px 15px black,
-  -5px -5px 15px black,
-  -5px 5px 15px black,
-  5px -5px 15px black;
+  border: blue 1px solid;
+  margin-right: 0.5rem;
 }
 
-button:hover {
+button.help:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0.3rem;
+  background: #0000cc; /* Blue equivalent of #cc0000 */
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 204, 0.8) 0 4px 5px inset, /* Blue equivalent of rgba(204, 0, 0, 0.8) */
+    rgba(255, 255, 255, 0.5) 0 12px 5px inset,
+    rgba(0, 0, 153, 0.7) 0 -12px 5px inset, /* Blue equivalent of rgba(153, 0, 0, 0.7) */
+    rgba(0, 0, 0, 0.8) 0 4px 8px;
+}
+
+button.help:hover {
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: inset 0 12px 16px 0 rgba(0,0,0,0.24), inset 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-button:active {
-  box-shadow: 
-    inset 5px 5px 15px black,
-    inset -5px -5px 15px black,
-    inset -5px 5px 15px black,
-    inset 5px -5px 15px black;
+  font-size: 1.1rem;
+  background-image: radial-gradient(
+    1.2rem 1.2rem,
+    circle contain,
+    blue 0.5rem,
+    #ff8080 1.1rem,
+    #ff8080 1.2rem,
+    #cc0000 1.8rem
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+    rgba(275, 255, 255, 0.7) 0 0.1rem 0.1rem inset, lightblue 0 0.3rem 0.4rem inset,
+    rgba(0, 0, 0, 0.3) 0 0.8rem 0.9rem inset,
+    rgba(255, 255, 275, 0.5) 0 -2px 3px inset, blue 0 -7px 20px inset;
 }
 
 .allmole {
@@ -224,15 +306,12 @@ button:active {
   background-position: center;
   border-radius: 80rem;
   overflow: hidden;
-  box-shadow:
-  .3rem .3rem .5rem black,
-  -.3rem -.3rem .5rem black,
-  -.3rem .3rem .5rem black,
-  .3rem -.3rem .5rem black;
+  box-shadow: 0.3rem 0.3rem 0.5rem black, -0.3rem -0.3rem 0.5rem black,
+    -0.3rem 0.3rem 0.5rem black, 0.3rem -0.3rem 0.5rem black;
 }
 
 .country:hover {
-  cursor: crosshair
+  cursor: crosshair;
 }
 
 .country1 {
@@ -308,20 +387,20 @@ button:active {
   background-position-x: center;
   background-position-y: center;
   overflow: hidden;
-  animation: rise .93s ease-out;
+  animation: rise 0.93s ease-out;
 }
 
 @keyframes rise {
-  0%{
-      transform: translateY(100%);
+  0% {
+    transform: translateY(100%);
   }
-  15%{
+  15% {
     transform: translateY(0%);
   }
-  80%{
-      transform: translateY(0);
+  80% {
+    transform: translateY(0);
   }
-  100%{
+  100% {
     transform: translateY(100%);
   }
 }
@@ -348,7 +427,7 @@ button:active {
 }
 
 .modal-content {
-  background: url('https://image.nostr.build/nostr.build_90dd9ee1e3c49caf1b21b4153871b8b12a8680ebb5792d5d7410bfb44059b2c8.png');
+  background: url("https://image.nostr.build/nostr.build_90dd9ee1e3c49caf1b21b4153871b8b12a8680ebb5792d5d7410bfb44059b2c8.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -359,11 +438,8 @@ button:active {
   width: 80%;
   height: 80%;
   color: white;
-  text-shadow: 
-  .1rem .1rem .6rem black,
-  -.1rem -.1rem .6rem black,
-  -.1rem .1rem .6rem black,
-  .1rem -.1rem .6rem black;
+  text-shadow: 0.1rem 0.1rem 0.6rem black, -0.1rem -0.1rem 0.6rem black,
+    -0.1rem 0.1rem 0.6rem black, 0.1rem -0.1rem 0.6rem black;
 }
 
 .modal-content h2 {
