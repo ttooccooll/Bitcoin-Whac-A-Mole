@@ -63,7 +63,7 @@ function startGame() {
         smashedMoles.forEach(mole => {
             mole.classList.remove('smashed');
         });
-        setTimeout(() => timeUp = true, 30000);
+        setTimeout(() => timeUp = true, 40000);
 
         unsmashedMoles = document.querySelectorAll('.mole:not(.smashed)');
         
@@ -147,7 +147,7 @@ function increaseHashRate() {
     setTimeout(() => {
         clearInterval(hashInterval);
         endGame();
-    }, 30000);
+    }, 40000);
 }
 
 function increaseYearRate() {
@@ -158,7 +158,7 @@ function increaseYearRate() {
 
     setTimeout(() => {
         clearInterval(yearInterval);
-    }, 30000);
+    }, 40000);
 }
 
 function endGame() {
