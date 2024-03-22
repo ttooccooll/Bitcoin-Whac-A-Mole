@@ -498,7 +498,7 @@ button.help:active {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 300px) {
   body {
     width: 100%;
     overflow: auto;
@@ -511,8 +511,10 @@ button.help:active {
     justify-content: space-around;
   }
   .stats {
-    margin-left: 1%;
-    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    overflow: auto;
   }
   .modal-content p {
     font-size: 15px;
