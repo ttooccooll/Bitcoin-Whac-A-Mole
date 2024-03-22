@@ -516,7 +516,19 @@ button.help:active {
   .stats {
     margin-left: 1%;
     width: 98%;
-    height: auto;
+    height: 10%;
+    font-size: 15px;
+  }
+  .stat {
+    font-size: 15px;
+  }
+  .score {
+    font-size: 15px;
+  }
+  .year {
+    font-size: 15px;
+  }
+  .hash {
     font-size: 15px;
   }
   .modal-content p {
@@ -524,6 +536,5 @@ button.help:active {
   }
   .country {
     width: calc(25% - 1vh);
-    height: auto;
   }
 }
