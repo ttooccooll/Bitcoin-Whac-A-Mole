@@ -156,6 +156,7 @@ button.start {
   margin-left: 1rem;
   width: 3.8rem;
   height: 3.8rem;
+  text-align: center;
   font-size: 1rem;
   font-weight: bold;
   background-color: red;
@@ -241,6 +242,7 @@ button.help {
   margin-left: 1rem;
   width: 3.8rem;
   height: 3.8rem;
+  text-align: center;
   font-size: 1rem;
   font-weight: bold;
   background-color: blue;
