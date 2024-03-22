@@ -505,6 +505,10 @@ button.help:active {
   }
   .allmole {
     width: 98%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .stats {
     margin-left: 1%;
