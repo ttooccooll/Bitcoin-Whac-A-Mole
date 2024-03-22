@@ -23,7 +23,7 @@ function randomMole() {
 let molesUp = 0;
 
 function pop() {
-    const time = 920;
+    const time = 890;
     if (molesUp < 2) {
         let mole = randomMole();
         while (mole.classList.contains('smashed')) {
@@ -178,7 +178,7 @@ function displayEndGameModal() {
     finalHashRateSpan.textContent = Math.floor(hash);
     finalYearSpan.textContent = year;
 
-    if (score === 16) {
+    if (score >= 16) {
         endTextSpan.textContent = "You have squashed the Bitcoin network and ushered in a dystopian nightmare. Congratulations?";
     } else {
         endTextSpan.textContent = "The hash rate just got away from you and now you have inadvertently ushered in hyperbitcoinization. The few remaining bans are lifted.";

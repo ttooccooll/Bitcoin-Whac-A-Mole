@@ -422,7 +422,7 @@ button.help:active {
   background-position-x: center;
   background-position-y: center;
   overflow: hidden;
-  animation: rise 0.93s ease-out;
+  animation: rise 0.9s ease-out;
 }
 
 @keyframes rise {
