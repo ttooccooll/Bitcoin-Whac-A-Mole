@@ -177,6 +177,7 @@ button.start {
   border-radius: 500px;
   border: red 1px solid;
   display: block;
+  margin-top: 0.1rem;
 }
 
 button:before {
@@ -263,6 +264,7 @@ button.help {
   border-radius: 500px;
   border: blue 1px solid;
   margin-right: 0.5rem;
+  margin-top: 0.1rem;
 }
 
 button.help:before {
@@ -274,13 +276,13 @@ button.help:before {
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0.3rem;
-  background: #0000cc; /* Blue equivalent of #cc0000 */
+  background: #0000cc;
   width: 4.3rem;
   height: 4.3rem;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 204, 0.8) 0 4px 5px inset, /* Blue equivalent of rgba(204, 0, 0, 0.8) */
+  box-shadow: rgba(0, 0, 204, 0.8) 0 4px 5px inset,
     rgba(255, 255, 255, 0.5) 0 12px 5px inset,
-    rgba(0, 0, 153, 0.7) 0 -12px 5px inset, /* Blue equivalent of rgba(153, 0, 0, 0.7) */
+    rgba(0, 0, 153, 0.7) 0 -12px 5px inset,
     rgba(0, 0, 0, 0.8) 0 4px 8px;
 }
 
@@ -331,7 +333,7 @@ button.help:active {
 }
 
 .country {
-  border: 3px ridge grey;
+  border: 2px ridge grey;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #111111;
