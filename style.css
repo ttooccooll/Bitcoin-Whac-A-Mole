@@ -422,7 +422,7 @@ button.help:active {
   background-position-x: center;
   background-position-y: center;
   overflow: hidden;
-  animation: rise 0.9s ease-out;
+  animation: rise 0.8s ease-out;
 }
 
 @keyframes rise {
@@ -541,5 +541,11 @@ button.help:active {
   }
   .country {
     width: calc(23% - 1vh);
+  }
+  start.button {
+    text-align: center;
+  }
+  help.button {
+    text-align: center;
   }
 }

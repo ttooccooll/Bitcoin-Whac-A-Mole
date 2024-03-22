@@ -23,7 +23,7 @@ function randomMole() {
 let molesUp = 0;
 
 function pop() {
-    const time = 890;
+    const time = 790;
     if (molesUp < 2) {
         let mole = randomMole();
         while (mole.classList.contains('smashed')) {
@@ -55,7 +55,7 @@ function startGame() {
         started = true;
         scoreBoard.textContent = 0;
         timeUp = false;
-        const smashSound = new Audio('smash.mp3');
+        const smashSound = new Audio('Invention.wav');
         smashSound.play();
         increaseHashRate();
         increaseYearRate();
